@@ -70,35 +70,35 @@ main {
     flex-direction: column;
 }
 
-.card {
+.demo-card {
     background-color: var(--palette-1-secondary);
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
 
-.card div {
+.demo-card div {
     text-align: center;
 }
 
-.card img {
+.demo-card img {
     width: 100%;
     position: relative;
     top: 35px;
 }
 
-.card h2 {
+.demo-card h3 {
     color: var(--palette-1-main);
     margin-bottom: 40px;
 }
 
-.card p {
+.demo-card p {
     color: #63798C;
     font-weight: 600;
     line-height: 1.7rem;
 }
 
-.card a {
+.demo-card a {
     display: inline-block;
     margin-top: 50px;
     padding: 10px 60px;
@@ -110,20 +110,123 @@ main {
     font-weight: bold;
 }
 
-.card a::before {
+.demo-card a::before {
     content:'\f179';
     font-family: "Font Awesome 5 Brands";
     font-weight: 900;
 }
 
-.card i {
+.demo-card i {
     color: var(--palette-1-main);
     font-size: 6rem;
     margin-bottom: 30px;
 }
 
 
+/* Strategic plan */
 
+.strategic-plan {
+    background-color: var(--palette-2-main);
+    padding: 50px 0;
+}
+
+.strategic-plan > div {
+    flex-direction: column;
+}
+
+.strat-card img {
+    width: 100%;
+}
+
+.strat-card h2 {
+    color: var(--palette-2-secondary);
+    margin: 60px 0 30px;
+    font-size: 2rem;
+}
+
+.card-1 p {
+    color: var(--palette-2-secondary);
+    line-height: 1.6rem;
+}
+
+.card-2 {
+    margin-top: 50px;
+    background-color: var(--palette-2-secondary);
+    border-radius: 40px;
+    text-align: center;
+    padding: 30px 20px 0;
+}
+
+.card-2 h3 {
+    padding: 15px 0;
+}
+
+.card-2 p {
+    font-style: italic;
+    line-height: 1.7rem;
+}
+
+.card-2 a {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 18px 20px;
+    border-radius: 50%;
+    background-color: var(--palette-2-main);
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.testimonials span {
+    text-transform: uppercase;
+}
+
+.testimonials h2 {
+    color: var(--palette-2-main);
+    font-size: 2rem;
+    margin: 50px 0;
+}
+
+.testimonials p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.testimonial-card {
+flex-direction: column;
+align-items: center;
+background-color: var(--palette-2-main);
+border-radius: 40px;
+padding: 50px 20px 30px 20px;
+color: white;
+margin-top: 50px;
+}
+
+.testimonial-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.testimonial-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-card span {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
 
 
 
