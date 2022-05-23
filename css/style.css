@@ -1,0 +1,183 @@
+/* Common */
+
+:root {
+    --palette-1-main: #0084FD;
+    --palette-1-secondary: #B5DDFF;
+    --palette-2-main: #9792E4;
+    --palette-2-secondary: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flx {
+    display: flex;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--palette-1-main);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.head-menu {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.head-menu i {
+    font-size: 2rem;
+    color: white;
+}
+
+.nav-menu {
+    display: none;
+}
+
+
+/* Main */
+
+main {
+    margin-top: 80px;
+}
+
+
+/* Demo app */
+
+
+.demo-app {
+    margin: 150px auto 100px;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--palette-1-secondary);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.card div {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    position: relative;
+    top: 35px;
+}
+
+.card h2 {
+    color: var(--palette-1-main);
+    margin-bottom: 40px;
+}
+
+.card p {
+    color: #63798C;
+    font-weight: 600;
+    line-height: 1.7rem;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 60px;
+    border-radius: 30px;
+    background-color: var(--palette-1-main);
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.card a::before {
+    content:'\f179';
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+}
+
+.card i {
+    color: var(--palette-1-main);
+    font-size: 6rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 768px) {
+
+}
+
+@media all and (min-width: 992px) {
+    .nav-menu {
+        display: inline-block;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        height: 100%;
+    }
+
+    .nav-menu li a {
+        display: inline-block;
+        padding: 10px 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .left-menu i {
+        display: none;
+    }
+}
