@@ -16,16 +16,16 @@
     <header>
 
         <div class="head-menu flx">
-            <img src="./img/logo.png" alt="Logo">
+            <a href=""><img src="./img/logo.png" alt="Logo"></a>
 
             <div class="left-menu">
                 <i class="fa-solid fa-bars"></i>
                 <ul class="nav-menu">
-                    <li><a href="#">Planning</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Get Started</a></li>
+                    <li><a href="#" class="menu-button">Planning</a></li>
+                    <li><a href="#" class="menu-button">Testimonials</a></li>
+                    <li><a href="#" class="menu-button">Features</a></li>
+                    <li><a href="#" class="menu-button">About Us</a></li>
+                    <li><a href="#start" class="login-button">Get Started</a></li>
                 </ul>
             </div>
 
@@ -99,9 +99,10 @@
                 <div class="strat-card card-1">
 
                     <img src="./img/planning1.png" alt="Strategic Plan 1">
-                    <h2>Strategic Planning</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas amet porro excepturi. Nesciunt, quod numquam rem ut accusantium blanditiis dignissimos ratione provident possimus officiis officia dicta facere. Dicta, illum pariatur.</p>
-
+                    <div>
+                        <h2>Strategic Planning</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas amet porro excepturi. Nesciunt, quod numquam rem ut accusantium blanditiis dignissimos ratione provident possimus officiis officia dicta facere. Dicta, illum pariatur.</p>
+                    </div>
                 </div>
 
                 <div class="strat-card card-2">
@@ -109,7 +110,7 @@
                     <img src="./img/planning2.png" alt="Strategic Plan 2">
                     <h3>App Developement</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et expedita esse quae praesentium laboriosam, placeat voluptatibus voluptas facere error quis?</p>
-                    <a href="#"><i class="fa-solid fa-arrow-down-long"></i></a>
+                    <a href="#aboutus"><i class="fa-solid fa-arrow-down-long"></i></a>
 
                 </div>
 
@@ -238,7 +239,7 @@
 
         <!-- About us -->
 
-        <section class="about">
+        <section class="about" id="aboutus">
 
             <div class="about-box container flx">
 
@@ -267,7 +268,7 @@
 
         <!-- Start -->
 
-        <section class="start">
+        <section class="start" id="start">
 
             <div class="container">
 
@@ -279,7 +280,7 @@
                     more functionality, we'll liik into other plans with more controls.
                 </p>
                 <a href="#" class="start-button">Get Started</a>
-                <span class="copyright">Copyright 2022 Boolean &#9679; Classe 67 &#9679; <a href="#">Privacy policy</a></span>
+                <span class="copyright">Copyright 2022 Boolean &#9679; Classe 67 &#9679; <a href="#" class="privacypolicy">Privacy policy</a></span>
 
             </div>
 
@@ -293,7 +294,7 @@
 
         <div class="container">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi repellat optio obcaecati, incidunt cumque? Provident praesentium.</p>
-            <p><a href="#">Lorem ipsum</a> dolor sit, amet consectetur.<a href="#">Boolean Careers</a></p>
+            <p><a href="#">Lorem ipsum</a> dolor sit, amet consectetur <a href="#">Boolean Careers</a></p>
         </div>
         
     </footer>

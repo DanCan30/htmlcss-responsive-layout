@@ -7,6 +7,10 @@
     --palette-2-secondary: #FFFFFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,8 +32,8 @@ ul {
     list-style: none;
 }
 
+                        /* Mobile */
 
-/* Mobile */
 
 /* Header */
 
@@ -57,6 +61,19 @@ header {
     display: none;
 }
 
+.login-button {
+    transition: .5s;
+}
+
+.menu-button:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.login-button:hover {
+    background-color: #5aacfa;
+}
+
 
 /* Main */
 
@@ -66,7 +83,6 @@ main {
 
 
 /* Demo app */
-
 
 .demo-app {
     margin: 150px auto 100px;
@@ -110,13 +126,14 @@ main {
 .demo-card a {
     display: inline-block;
     margin-top: 50px;
-    padding: 15px 60px;
+    padding: 15px 55px;
     border-radius: 30px;
     background-color: var(--palette-1-main);
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
+    transition: .5s;
 }
 
 .demo-card a::before {
@@ -129,6 +146,11 @@ main {
     color: var(--palette-1-main);
     font-size: 6rem;
     margin-bottom: 30px;
+}
+
+.big-demo-card a:hover {
+    background-color: #5aacfa;
+    color: black;
 }
 
 
@@ -181,6 +203,16 @@ main {
     padding: 18px 20px;
     border-radius: 50%;
     background-color: var(--palette-2-main);
+}
+
+.strat-card.card-2 a:hover i  {
+    animation: rotate .3s linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 
@@ -292,13 +324,19 @@ margin-top: 50px;
     font-weight: bold;
     border-radius: 30px;
     margin-top: 20px;
+    transition: .5s;
+}
+
+.benefit-card a:hover {
+    background-color: #7269ee;
+    color: black;
 }
 
 
 /* About us */
 
 .about {
-    margin: 100px 0;
+    padding: 100px 0;
 }
 
 .about-box {
@@ -315,6 +353,7 @@ flex-direction: column;
     color: #444444;
     line-height: 2rem;
     font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .about2 {
@@ -359,8 +398,13 @@ flex-direction: column;
     padding: 10px 18px;
     border-radius: 30px;
     text-decoration: none;
+    transition: .5s;
 }
 
+.about2 a:hover {
+    background-color: #7269ee;
+    color: black;
+}
 .about2 i {
     margin-right: 5px;
 }
@@ -407,12 +451,22 @@ flex-direction: column;
     font-weight: bold;
     letter-spacing: 3px;
     margin: 30px auto;
+    transition: .5s;
+}
+
+.start-button:hover {
+    background-color: black;
+    color: var(--palette-2-secondary);
 }
 
 .copyright,
 .copyright a {
     color: var(--palette-2-secondary);
     font-size: .8rem;
+}
+
+.privacypolicy:hover {
+    color: black;
 }
 
 
@@ -438,40 +492,24 @@ footer a {
     color: var(--palette-2-main);
 }
 
+footer a:hover {
+    color: red;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet */
+                        /* Tablet */
 
 
 @media all and (min-width: 768px) {
 
     .container {
         width: 90%;
-        max-width: 700px;
+        max-width: 740px;
         margin: 0 auto;
     }
+
 
     /* Demo app */
 
@@ -489,11 +527,13 @@ footer a {
         width: 65%;
     }
 
+
     /* Strategic plan */
 
     .strat-card h2 {
         font-size: 4rem;
     }
+
 
     /* Testimonials */
 
@@ -510,6 +550,7 @@ footer a {
         text-align: left;
         padding-left: 30px;
     }
+
 
     /* Benefits */
 
@@ -530,6 +571,7 @@ footer a {
         font-size: 4rem;
 
     }
+
 
     /* About us */
 
@@ -566,6 +608,7 @@ footer a {
         line-height: 2.2rem;
     }
 
+
     /* Start */
 
     .start > .container {
@@ -588,8 +631,9 @@ footer a {
     }
 
     .start a {
-        width: 50%;
+        width: 40%;
     }
+
 
     /* Footer */
     
@@ -607,45 +651,22 @@ footer a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        /* Desktop */
 
 
 @media all and (min-width: 992px) {
+
+    .container,
+    .head-menu {
+        width: 80%;
+        min-width: 900px;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+
+    /* Hamburger menu */
+
     .nav-menu {
         display: inline-block;
     }
@@ -655,14 +676,139 @@ footer a {
         height: 100%;
     }
 
-    .nav-menu li a {
+    .menu-button {
         display: inline-block;
         padding: 10px 10px;
         text-decoration: none;
         color: white;
     }
 
+    .login-button {
+        display: inline-block;
+        padding: 15px 15px;
+        text-decoration: none;
+        border-radius: 30px;
+        background-color: var(--palette-2-secondary);
+        color: black;
+
+    }
+
     .left-menu i {
         display: none;
     }
+
+
+    /* Demo app */
+
+    .big-demo-card {
+        flex-direction: row;
+    }
+    
+    .demo-app {
+        margin: 150px auto 100px;
+    }
+
+
+    /* Strategic plan */
+
+    .strategic-plan {
+        height: 80vh;
+    }
+
+    .strategic-plan .container {
+        width: 70%;
+    }
+
+    .strategic-plan > div {
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .strat-card.card-1 img {
+        width: 90%;
+    }
+
+    .strat-card.card-2 img {
+        width: 75%;
+    }
+
+    .strat-card.card-1 {
+        width: 45%;
+    }
+
+    .strat-card.card-1 h2 {
+        font-size: 2rem;
+        padding-top: 50px;
+
+    }
+
+    .strat-card.card-1 p {
+        width: 70%;
+    }
+
+    .strat-card.card-2 {
+        align-self: flex-end;
+        width: 35%;
+        height: 70%;
+    }
+
+
+    /* Testimonials */
+
+    .testimonial-card {
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .testimonial-img {
+        width: 200px;
+    }
+
+    .testimonial-quote {
+        width: 75%;
+    }
+
+    .testimonials h2 {
+        font-size: 3rem;
+    }
+
+
+    /* Benefits */
+    
+    .benefit-card {
+        width: calc(100% / 3 - 20px);
+    }
+
+
+    /* About us */
+
+    
+    .about2 h3 {
+        width: 80%;
+    }
+
+
+    /* Start */
+
+    .start a {
+        width: 30%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .start p {
+        width: 50%;
+        line-height: 2rem;
+    }
+    
+    
+    /* Footer */
+
+    footer p {
+        width: 50%;
+        margin: 0 auto;
+    }
+   
 }
