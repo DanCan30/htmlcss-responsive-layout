@@ -93,8 +93,12 @@ main {
     background-color: var(--palette-1-secondary);
     padding: 30px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     flex-direction: column;
+}
+
+.demo-card.big-demo-card {
+    padding-bottom: 0;
 }
 
 .demo-card div {
@@ -105,11 +109,14 @@ main {
     text-align: left;
 }
 
-.demo-card img {
-    width: 100%;
+.big-demo-card .demo-img {
+    line-height: 0;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.demo-card.big-demo-card img {
     max-width: 300px;
-    position: relative;
-    top: 30px;
 }
 
 .demo-card h3 {
@@ -704,6 +711,10 @@ footer a:hover {
         flex-direction: row;
     }
     
+    .demo-img {
+    align-self: flex-end;
+    }
+
     .demo-app {
         margin: 150px auto 100px;
     }
